@@ -5,12 +5,14 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Foo } from "./components/interfaces";
 export namespace Components {
     interface MyComponent {
         /**
           * The first name
          */
         "first": string;
+        "foo": Foo;
         /**
           * The last name
          */
@@ -38,6 +40,7 @@ declare namespace LocalJSX {
           * The first name
          */
         "first"?: string;
+        "foo"?: Foo;
         /**
           * The last name
          */
